@@ -1,4 +1,4 @@
-name: Build and Push aiqing-node Docker Image 
+name: Build and Push daohang Docker Image 
 #可以使用action生成自己的镜像
 
 on:
@@ -39,7 +39,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/aiqing2:latest
+            ghcr.io/${{ github.repository_owner }}/dh:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=XHTTP Server
